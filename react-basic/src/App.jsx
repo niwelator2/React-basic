@@ -1,35 +1,34 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="container my-5">
+      <h1 className="text-center mb-4">Simple Form</h1>
+      <SimpleForm />
+    </div>
+  );
+
+  function SimpleForm() {
+    return (
+      <form>
+        <div className="mb-3">
+          <label htmlFor="name" className="form-label">Name</label>
+          <input type="text" className="form-control" id="name" placeholder="Enter your name" />
+        </div>
+        <div className="mb-3">
+          <label htmlFor="email" className="form-label">Email address</label>
+          <input type="email" className="form-control" id="email" placeholder="Enter your email" />
+        </div>
+        <div className="mb-3">
+          <label htmlFor="message" className="form-label">Message</label>
+          <textarea className="form-control" id="message" rows="3" placeholder="Your message"></textarea>
+        </div>
+        <button type="submit" className="btn btn-primary">Submit</button>
+      </form>
+    );
+  }
+  
 }
 
 export default App

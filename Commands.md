@@ -14,3 +14,7 @@ Comd. to start project
 ```bash
     npm run dev
 ```
+Comd. to install bootstrap
+```bash
+    npm i bootstrap
+```
