@@ -3,10 +3,16 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
 
   return (
+    <>
     <div className="container my-5">
       <h1 className="text-center mb-4">Simple Form</h1>
       <SimpleForm />
     </div>
+      
+    <div className="grid">
+      <Grid />
+    </div>
+    </>
   );
 
   function SimpleForm() {
@@ -27,6 +33,53 @@ function App() {
         <button type="submit" className="btn btn-primary">Submit</button>
       </form>
     );
+  }
+
+  function Grid(){
+    return (
+      <>
+      <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          Ala nie ma kota 
+        </div>
+        <div class="col">
+          Ala nie ma kota 
+        </div>
+        <div class="col">
+          Ala nie ma kota 
+        </div>
+        <div class="col">
+          Ala nie ma kota 
+        </div>
+        <div class="col">
+          Ala nie ma kota 
+        </div>
+        <div class="col">
+          Ala nie ma kota 
+        </div>
+        <div class="col">
+          Ala nie ma kota 
+        </div>
+        <div class="col">
+          Ala nie ma kota 
+        </div>
+        <div class="col">
+          Ala nie ma kota 
+        </div>
+        <div class="col">
+          Ala nie ma kota 
+        </div>
+        <div class="col">
+          Ala nie ma kota 
+        </div>
+        <div class="col">
+          Ala nie ma kota 
+        </div>
+      </div>
+    </div>
+      </>
+    )
   }
   
 }
