@@ -18,3 +18,7 @@ Comd. to install bootstrap
 ```bash
     npm i bootstrap
 ```
+Comd. to install react-router-dom
+```bash
+    npm install react-router-dom
+```
