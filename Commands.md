@@ -22,3 +22,7 @@ Comd. to install react-router-dom
 ```bash
     npm install react-router-dom
 ```
+Cmd. to install js-cookie
+```bash
+    npm install js-cookie
+```
